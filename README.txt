@@ -1,60 +1,16 @@
+Dorang Free Bootstrap4 Landing Page for personal and commercial use. Designed with ♥️ and creativity by Devcrud.com 
 
-TITLE: 
-Honest - 100% Fully Responsive Free HTML5 Bootstrap Template
+Product Page: https://wwww.devcrud.com/
 
-AUTHOR:
-DESIGNED & DEVELOPED by GetTemplates.co
+Credits:
 
-Website: http://gettemplates.co/
-Twitter: http://twitter.com/gettemplatesco
-Facebook: http://facebook.com/gettemplatesco
+    Demo Images:
+        Unsplash:       	(https://www.unsplash.com)
 
+    Icons:
+		Themify Icons: 		(https://themify.me/themify-icons)
 
-CREDITS:
-
-Bootstrap
-http://getbootstrap.com/
-
-jQuery
-http://jquery.com/
-
-jQuery Easing
-http://gsgd.co.uk/sandbox/jquery/easing/
-
-Modernizr
-http://modernizr.com/
-
-Google Fonts
-https://www.google.com/fonts/
-
-Icomoon
-https://icomoon.io/app/
-
-Themify Icons
-https://themify.me/themify-icons
-
-Respond JS
-https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
-
-animate.css
-http://daneden.me/animate
-
-jQuery Waypoint
-Sticky by Waypoint
-https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
-
-Owl Carousel
-http://www.owlcarousel.owlgraphic.com/
-
-jQuery countTo
-http://www.owlcarousel.owlgraphic.com/
-
-Magnific Popup
-http://dimsemenov.com/plugins/magnific-popup/
-
-Stellar Parallax
-http://markdalgleish.com/projects/stellar.js/
-
-Demo Images:
-http://unsplash.com
-
+	Other:
+		JQuery: 			(https://www.jquery.com)
+		Bootstrap: 			(https://www.getbootstrap.com) 
+		animate.css:		(http://daneden.me/animate) 
