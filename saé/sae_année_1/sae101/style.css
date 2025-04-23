@@ -1,36 +1,3 @@
-/*
-   
-    Template Name : Rolling - Freelancer Portfolio Template
-    Author : UiPasta Team
-    Website : http://www.uipasta.com/
-    Support : http://www.uipasta.com/support/
-	
-	
-*/
-
-
-
-/*
-   
-   Table Of Content
-   
-   1. Global Style
-   2. Preloader
-   3. Home Section and Navigation Menu
-   4. About Me
-   5. Portfolio
-   8. Services
-  12. Footer
-  13. Responsive
-  14. Scroll To Top
-  15. Useful Classes ( Such as : Margin, Padding, colors  "This classes will be helpful for you during designing/development time.")
-  16. UiPasta Credit
- 
-
-*/
-
-
-
 /* Global Style */
 
 body {
@@ -40,6 +7,7 @@ body {
     letter-spacing: 1px;
     height: 100%;
     font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
 }
 
 html,
@@ -104,10 +72,6 @@ fieldset {
     padding: 0
 }
 
-.section-space-padding {
-    padding: 100px 0px;
-}
-
 .section-title {
     text-align: center;
 }
@@ -115,8 +79,6 @@ fieldset {
 .section-title h2 {
     margin-top: 0;
     font-weight: 600;
-    border-bottom: 4px double #6a02d9;
-	border-radius: 25px;
     font-size: 30px;
     margin: 0 auto;
     padding: 10px 0;
@@ -138,7 +100,7 @@ fieldset {
 	cursor: url(../images/owl-carousel/grabbing.png) 8 8, move;
 }
 
-.button {
+.button  {
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
@@ -158,7 +120,28 @@ fieldset {
 	transition: all 0.3s;
 }
 
-.button:after {
+.button2{
+    border: none;
+    color: black;
+	font-family: inherit;
+	font-size: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.button:after,
+.button2:after {
 	content: '';
 	position: absolute;
 	z-index: -1;
@@ -168,7 +151,8 @@ fieldset {
 }
 
 
-.button:before {
+.button:before,
+.button2:before {
 	font-family: 'FontAwesome';
 	speak: none;
 	font-style: normal;
@@ -186,15 +170,25 @@ fieldset {
 	color: #fff;
 	overflow: hidden;
 }
+.button2-style {
+	border-radius: 50px;
+	border: 3px solid black;
+	color: black;
+	overflow: hidden;
+}
 
 .button-style:hover,
 .button-style:active,
-.button-style:focus {
+.button-style:focus,
+.button2-style:hover,
+.button2-style:active,
+.button2-style:focus  {
 	background: #6a02d9;
 	color: #ffffff !important;
 }
 
-.button-style:before {
+.button-style:before,
+.button2-style:before {
 	position: absolute;
 	height: 100%;
 	font-size: 125%;
@@ -205,113 +199,26 @@ fieldset {
 	transition: all 0.3s;
 }
 
-.button-style:active:before {
+.button-style:active:before,
+.button2-style:focus:before {
 	color: #6a02d9;
 }
 
-.button-style-icon:before {
+.button-style-icon:before,
+.button2-style-icon:before {
 	left: 130%;
 	top: -2px;
 }
 
-.button-style-icon:hover:before {
+.button-style-icon:hover:before,
+.button2-style-icon:hover:before {
 	left: 80%;
 }
 
-.button-style-dark {
+.button-style-dark,
+.button2-style-dark {
 	border: 3px solid #000000 !important;
 	color: #000000;
-}
-
-
-
-/* Preloader */
-
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #ffffff;
-    z-index: 999;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    transition: all .5s ease;
-}
-
-body.loaded #preloader{
-    opacity: 0;
-    visibility: hidden;
-}
-
-.loader{
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #6a02d9;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-.loader:before{
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #6a02d9;
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
-}
-
-.loader:after{
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #6a02d9;
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
 }
 
 
@@ -325,7 +232,8 @@ body.loaded #preloader{
 .home-section-background {
     position: relative;
     height: 100%;
-    background: url();
+    background: url(../../../images/image.png);
+    background-size :contain;
     z-index: 1;
 }
 
@@ -350,8 +258,6 @@ body.loaded #preloader{
     display: table-cell;
     vertical-align: middle;
 }
-
-.header-text {}
 
 .home-section-background h2 {
     color: #f8f8f8;
@@ -475,31 +381,64 @@ body.loaded #preloader{
 
 /* About Me */
 
-.about-section {
-	overflow: hidden;
-	background-color: #F9F9F9;
-}
+/* Services */
+#livrables {
+    background: #f4f4f4;
+    padding: 0px 20px;
+    text-align: center;
+  }
+  
+  /* Titre principal */
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #222;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 
-.about-section img {
-	position: absolute;
-}
-
-.about-me {}
-
-.about-me h2 {
-	padding: 0px 50px;
-}
-
-.about-me p {
-	padding: 50px;
-	font-size: 15px;
-}
+  /* Carte compétence */
+  .a_propos {
+    border-radius: 16px;
+    padding: 30px;
+    text-align: left;
+  }
+  
+  /* Titre des cartes */
+  .title_ap {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #6a02d9;
+    font-weight: 600;
+  }
+  
+  /* Description des compétences */
+  .desc {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .a_propos {
+      padding: 20px;
+    }
+  }
+  
 
 
 
 /* Portfolio */
 
-.portfolio {}
+.portfolio {
+    background: #f4f4f4;
+    margin-bottom: 10rem;
+}
 
 .portfolio-inner .mix {
     display: none;
@@ -598,40 +537,78 @@ ul.portfolio li.active {
     cursor: inherit;
 }
 
+.semestres{
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    margin-left: 3rem;
+}
+
+.Semestre{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #6a02d9;
+    font-weight: 600;
+}
+
+.img_figma{
+    width: 5%;
+    margin-right: 2rem;
+    padding-bottom: 9rem;
+}
+
+.img_be{
+    width: 10.7%;
+}
+
+
 /* Services */
+#about {
+    background: #f4f4f4;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  
+  /* Titre principal */
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #222;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 
-.services-section {
-  background-color: #F9F9F9;
-}
-
-.services-section hr {
-  border-bottom: 2px solid #6a02d9;
-  width: 42px;
-  margin-left: 0px;
-}
-
-.services-section .services-detail {
-  border-radius: 4px;
-  border-bottom-right-radius: 20%;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
-  transition: all 0.3s ease-in-out;
-  position: relative;
-  top: 0px;
-  padding: 60px 40px 60px 40px;
-  margin-top: 32px;
-}
-
-.services-section .services-detail:hover {
-  border-bottom-right-radius: 4px;
-  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-  top: -5px;
-}
-
-.services-section .services-detail .fa {
-  font-size: 42px;
-}
-
+  /* Carte compétence */
+  .card__competence {
+    border-radius: 16px;
+    padding: 30px;
+    text-align: left;
+  }
+  
+  /* Titre des cartes */
+  .card__competence__title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #6a02d9;
+    font-weight: 600;
+  }
+  
+  /* Description des compétences */
+  .card__competence__dsc {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .card__competence {
+      padding: 20px;
+    }
+  }
 
 /* Footer */
 
@@ -800,7 +777,6 @@ ul.portfolio li.active {
 }
 
 
-
 /* Scroll To Top */
 
 .scroll-to-top {
@@ -821,47 +797,5 @@ ul.portfolio li.active {
 .scroll-to-top:hover,
 .scroll-to-top:focus {
     background-color: #6a02d9;
-    color: #ffffff;
-}
-
-/* Colors */
-
-.color-1 {
-	color: #0690f3;
-}
-
-.color-2 {
-    color: #ffdd00;
-}
-
-.color-3 {
-    color: #931ff9;
-}
-
-.color-4 {
-	color: #00ffa2;
-}
-
-.color-5 {
-	color: #f900c7;
-}
-
-.color-6 {
-	color: #f30808;
-}
-
-
-
-/* UiPasta Credit */
-
-.uipasta-credit {
-}
-
-.uipasta-credit a {
-    color: #6a02d9;
-    font-weight: 600;
-}
-
-.uipasta-credit a:hover {
     color: #ffffff;
 }
