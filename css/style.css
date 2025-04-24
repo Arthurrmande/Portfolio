@@ -610,6 +610,24 @@ ul.portfolio li.active {
     font-weight: 600;
 }
 
+.hoverbutton__global-radius{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    color: black;
+    border-radius: 40px;
+    border: #000 solid 2px;
+    overflow: hidden;
+}
+
+.hoverbutton__global-radius:hover{
+    background: #6a02d9;
+    color: #fff;
+}
+
+
 
 /* Services */
 #services {
