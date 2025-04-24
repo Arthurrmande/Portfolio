@@ -232,8 +232,8 @@ fieldset {
 .home-section-background {
     position: relative;
     height: 100%;
-    background: url(../../../images/imagecarte.png);
-    background-size :contain;
+    background: url(../../../images/imagefruit.png);
+    background-size :cover;
     z-index: 1;
 }
 
@@ -610,20 +610,8 @@ ul.portfolio li.active {
     margin: 5rem 0;
 }
 
-.img1 {
-    width: 30%;
-}
-
-.img2 {
-    width: 30%;
-}
-
-.imgspe1 {
-    width: 28%;
-}
-
-.imgspe{
-    width: 20%;
+.img {
+    width: 12%;
 }
 
 /* Responsive */
